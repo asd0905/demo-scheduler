@@ -1,0 +1,33 @@
+{
+    "0": {
+        "title": "Example0",
+        "schedule": [
+            {
+                "start": "10:00",
+                "end": "13:00",
+                "text": "ex0-1",
+                "data": {
+                }
+            },
+            {
+                "start": "13:00",
+                "end": "16:00",
+                "text": "ex0-2",
+                "data": {
+                }
+            }
+        ]
+    },
+    "1": {
+        "title": "Example1",
+        "schedule": [
+            {
+                "start": "16:00",
+                "end": "19:00",
+                "text": "ex1-1",
+                "data": {
+                }
+            }
+        ]
+    }
+}
