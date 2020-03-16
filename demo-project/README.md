@@ -3,8 +3,6 @@ demo-scheduler
 
 ### 필요한 스타일 파일
 ```
-<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="./dist/css/style.css"/>
 ```
 
