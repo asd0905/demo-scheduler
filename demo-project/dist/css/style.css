@@ -1,3 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+input, textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+a {
+  text-decoration: none; }
+
 .jq-schedule * {
   box-sizing: border-box; }
 .jq-schedule .sc_wrapper:after,
@@ -113,7 +129,7 @@
 .jq-schedule .ui-draggable-disabled {
   opacity: 0.8; }
 
-.modal-mask {
+.schedule-modal-mask {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -121,32 +137,93 @@
   width: 100%;
   height: 100%;
   display: none; }
-  .modal-mask .modal-wrapper {
+  .schedule-modal-mask .schedule-modal-wrapper {
     display: table-cell;
     vertical-align: middle;
     background-color: rgba(250, 250, 250, 0.5);
     opacity: 0;
     transition: opacity .5s linear; }
-    .modal-mask .modal-wrapper .modal-container {
+    .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container {
       width: 300px;
       max-height: 420px;
       margin: 0 auto;
       background-color: #ffffff;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
       border: 1px solid #666666;
-      padding: 20px; }
+      padding: 25px; }
+      .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop label {
+        display: block;
+        margin-bottom: 10px;
+        line-height: 30px; }
+        .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop label:after {
+          content: "";
+          display: table;
+          clear: both; }
+        .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop label span {
+          font-size: 13px;
+          float: left;
+          width: 50px; }
+        .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop label input {
+          height: 30px;
+          padding: 0 10px;
+          float: left;
+          outline: none;
+          width: calc(100% - 50px);
+          border: 1px solid #c6c6c6; }
+      .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop div {
+        text-align: center;
+        margin-top: 15px; }
+        .schedule-modal-mask .schedule-modal-wrapper .schedule-modal-container .schedule-modal-pop div button {
+          font-size: 13px;
+          line-height: 35px;
+          height: 35px;
+          border-radius: 3px;
+          vertical-align: middle;
+          cursor: pointer;
+          border: 1px solid #c6c6c6;
+          padding: 0 10px;
+          background-color: #ffffff;
+          outline: none; }
 
-/*.sc_data_scroll {
-	.timeline:before {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		content: 'x';
-		color: #ffffff;
-		font-size: 16px;
-	}
-}*/
-.section-timeline {
+#sectionTimeline {
   display: none; }
+
+.jq-schedule .sc_menu .sc_header_cell {
+  background-color: #2084e1; }
+.jq-schedule .sc_menu .sc_header .sc_header_scroll .sc_time {
+  font-size: 13px;
+  background-color: #2084e1; }
+.jq-schedule .sc_wrapper .sc_data {
+  background-color: #2084e1; }
+.jq-schedule .sc_wrapper .sc_main_box .sc_main_scroll .sc_main .timeline .sc_bar .ui-resizable-handle {
+  cursor: e-resize; }
+.jq-schedule .sc_data .timeline span {
+  word-break: break-all; }
+
+.add-section-div:after {
+  content: "";
+  display: table;
+  clear: both; }
+.add-section-div input {
+  height: 30px;
+  padding: 0 10px;
+  float: left;
+  width: calc(100% - 115px);
+  border: 1px solid #c6c6c6;
+  outline: none; }
+.add-section-div button {
+  font-size: 13px;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid #c6c6c6;
+  padding: 0 10px;
+  background-color: #ffffff;
+  outline: none;
+  width: 105px;
+  margin-left: 10px;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

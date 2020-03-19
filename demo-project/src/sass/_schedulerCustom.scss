@@ -1,0 +1,67 @@
+@import '_mixin';
+
+#sectionTimeline {
+	display: none;
+}
+
+.jq-schedule {
+	.sc_menu {
+		.sc_header_cell {
+			background-color: #2084e1;
+		}
+		.sc_header {
+			.sc_header_scroll {
+				.sc_time {
+					font-size: 13px;
+					background-color: #2084e1;
+				}
+			}
+		}
+	}
+
+	.sc_wrapper {
+		.sc_data {
+			background-color: #2084e1;
+		}
+		.sc_main_box {
+			.sc_main_scroll {
+				.sc_main {
+					.timeline {
+						.sc_bar {
+							.ui-resizable-handle {
+								cursor: e-resize;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sc_data {
+		.timeline {
+			span {
+				word-break: break-all;
+			}
+
+		}
+	}
+}
+
+.add-section-div {
+	@include clearfix();
+	input {
+		height: 30px;
+		padding: 0 10px;
+		float: left;
+		width: calc(100% - 115px);
+		border: 1px solid #c6c6c6;
+		outline: none;
+	}
+	button {
+		@include default-btn(13px, 30px);
+		width: 105px;
+		margin-left: 10px;
+		float: left;
+	}
+}

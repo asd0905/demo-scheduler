@@ -1,0 +1,36 @@
+// variable
+$schedule-bg-color: #f0f0f0;
+$schedule-border-color: #ccc;
+$schedule-header-height: 26px;
+$schedule-header-bg-color: #555;
+$schedule-header-color: #fff;
+$schedule-box-max-height: 500px;
+$schedule-box-header-color: #fff;
+$schedule-box-header-bg-color: #555;
+$schedule-bar-color: #fff;
+$schedule-bar-bg-color: #4f93d6;
+$schedule-bar-shadow-enable: false;
+$schedule-bar-shadow-color: #333;
+$schedule-bar-padding: 8px;
+
+@mixin clearfix() {
+	//*zoom: 1;
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin default-btn($font-size: 13px, $line-height: 42px) {
+	font-size: $font-size;
+	line-height: $line-height;
+	height: $line-height;
+	border-radius: 3px;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #c6c6c6;
+	padding: 0 10px;
+	background-color: #ffffff;
+	outline: none;
+}

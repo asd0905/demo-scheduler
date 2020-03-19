@@ -8,41 +8,37 @@
 </head>
 <body>
 
-<div style="padding: 0 0 12px;">
-    <button class="btn btn-info ajax-data" data-target="1.json" style="margin-bottom: 12px;">ajax1()</button>
-    <button class="btn btn-info ajax-data" data-target="2.json" style="margin-bottom: 12px;">ajax2()</button>
-    <button class="btn btn-info ajax-data" data-target="3.json" style="margin-bottom: 12px;">ajax3()</button>
-</div>
-
-<div>
+<div class="add-section-div">
     <input type="text" placeholder="섹션이름을 입력해주세요.">
-    <button class="btn btn-info add-section">섹션 추가하기</button>
-</div>
-
-<div style="padding: 0 0 12px;">
-    <button id="event_timelineData" class="btn btn-info" style="margin-bottom: 12px;">timelineData()</button>
-    <button id="event_scheduleData" class="btn btn-info" style="margin-bottom: 12px;">scheduleData()</button>
+    <button class="btn btn-info schedule-add-section">섹션 추가하기</button>
 </div>
 
 <div id="schedule"></div>
 
-<div class="modal-mask">
-    <div class="modal-wrapper">
-        <div class="modal-container">
-            <div class="modal=pop">
-                <form>
-                    <input class="title" type="text" placeholder="제목을 입력해주세요."/>
-                    <input class="start" type="text" placeholder="시작 날짜"/>
-                    <input class="end" type="text" placeholder="끝나는 날짜"/>
-                    <label class="section-timeline" for="sectionTimeline">섹션 timeline<input id="sectionTimeline" type="text"/></label>
-                </form>
+<div class="schedule-modal-mask">
+    <div class="schedule-modal-wrapper">
+        <div class="schedule-modal-container">
+            <div class="schedule-modal-pop">
+                <label for="scheduleTitle" class="schedule-title">
+                    <span>연수명</span>
+                    <input id="scheduleTitle" type="text" placeholder="제목을 입력해주세요."/>
+                </label>
+                <label for="scheduleStart" class="schedule-start">
+                    <span>시작일</span>
+                    <input id="scheduleStart" type="text" placeholder="시작 날짜"/>
+                </label>
+                <label for="scheduleEnd" class="schedule-end">
+                    <span>종료일</span>
+                    <input id="scheduleEnd" type="text" placeholder="끝나는 날짜"/>
+                </label>
+                <input id="sectionTimeline" type="text"/>
                 <div>
-                    <button class="cancel">취소</button>
-                    <button class="delete">삭제</button>
-                    <button class="make">생성</button>
-                    <button class="modify">수정</button>
-                    <button class="section-delete">삭제</button>
-                    <button class="section-modify">수정</button>
+                    <button class="schedule-cancel">취소</button>
+                    <button class="schedule-delete">삭제</button>
+                    <button class="schedule-make">생성</button>
+                    <button class="schedule-modify">수정</button>
+                    <button class="schedule-section-delete">삭제</button>
+                    <button class="schedule-section-modify">수정</button>
                 </div>
             </div>
         </div>
@@ -53,9 +49,10 @@
 <script type="text/javascript" src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./dist/js/jq.schedule.js"></script>
 <script type="text/javascript" src="./dist/js/scheduler-demo.js"></script>
+<script type="text/javascript" src="./dist/js/scheduler-edulub.js"></script>
 <script type="text/javascript">
-    var schedulerDemo = new schedulerDemo();
-    schedulerDemo.start();
+    var schedulerEdulub = new SchedulerEdulub();
+    schedulerEdulub.start();
 </script>
 </body>
 </html>
